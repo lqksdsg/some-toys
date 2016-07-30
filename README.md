@@ -1,2 +1,6 @@
 # scheme_test
-some scheme toys
+some toy codes:
+hashtable(c)
+Y Combinator(scheme)
+quick sort(scheme)
+merge sort(Haskell)
