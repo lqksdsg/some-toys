@@ -61,7 +61,7 @@ list* getValfromTable(int num, list* List[])
             val = val->next;
         }
     }
-    printf("can't found value %d\n",num);
+    printf("can't found val %d\n",num);
     return NULL;
 }
 
@@ -73,10 +73,10 @@ int main()
     {
         insertToTable(i,hashTable);
     }
-    insertToTable(10000,hashTable);
+    insertToTable(strToNumber("dfd"),hashTable);
 
-    list *val = getValfromTable(343,hashTable);
+    list *val = getValfromTable(strToNumber("dfd"),hashTable);
     if(val)
-        printf("find value %d\n",val->value);
+        printf("find value %s\n",numberToStr(val->value));
     return 0;
 }
